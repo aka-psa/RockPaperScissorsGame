@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/files/style.css">
+    <script src="./assets/files/script.js" async></script>
+    <script src="./assets/files/playerGet.js" async></script>
+    <title>Stone Paper Scissors</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="userdetails" style="width: 200px; margin-left: 40px 20px; display: flex;width: 100%;">
+            <div style="width: 30%; margin-top: 10px;">
+                <label  for="username">Name: </label>
+                <input  style="display: block; padding: 8px; width: 200px;" type="text" id="Inputer" placeholder="Enter your name">
+                <button style="display: block; padding: 8px;" onclick="submit()" id="Submiter">Submit</button>
+            </div>
+      <div style="width: 40%; text-align: center; margin-top: 10px;">STONE PAPER SCISSORS</div>
+       <div class="score" style=" width: 30%;">
+        <p style="right: 10px;">HighScore</p>
+        <p id="username"></p>
+       </div>
+        </div>
+        <div class="messageinformer">CHOOSE A OPTION</div>
+        <div class="images">
+            <div class="computer">
+                <img src="./assets/images/stoneComputer.png" />
+            </div>
+            <div class="player">
+                <img src="./assets/images/stonePlayer.png" />
+            </div>
+        </div>
+
+        <div class="points">
+            COMPUTER <span class="computerPoints">0</span> /
+            <span class="playerPoints">0</span> PLAYER
+        </div>
+
+        <div class="options">
+            <button type="button">STONE</button>
+            <button type="button">PAPER</button>
+            <button type="button">SCISSORS</button>
+        </div>
+        <div class="btns" style="margin: auto; width: 300px; margin-top: 30px; text-align: center;">
+            <button onclick='restart()'>New game</button>
+            <button onclick="result()" style="margin-top: 10px;">Result</button>
+        </div>
+    </div>
+</body>
+</html>

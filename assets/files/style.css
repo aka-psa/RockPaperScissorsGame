@@ -1,0 +1,136 @@
+body  {
+    font-family: Verdana;
+    background: #2d2a3a;
+    color: #fff;
+}
+
+.messageinformer{
+    padding: 30px;
+    text-align: center;
+}
+
+#Inputer {
+    border-radius: 7px;
+    background: none;
+    color:white;
+    border: 1px white solid;
+    padding: 0.5em 1em;
+    width: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    margin-top: 15px;
+}
+
+#Submiter{
+    border-radius: 7px;
+    background: none;
+    color:white;
+    border: 1px white solid;
+    padding: 0.5em 1em;
+    width: 75px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    margin-top: 15px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+    align-items: center;
+    height: 200px;
+}
+
+.points {
+    text-align: center;
+    margin: 2em 0em;
+}
+
+.computer img, .player img {
+    width: 75%;
+}
+
+.options {
+    justify-content: space-around;
+    margin-top: 5em;
+    display: flex;
+}
+.btns button{
+    border-radius: 7px;
+    background: none;
+    color:white;
+    border: 1px white solid;
+    padding: 0.5em 1em;
+    width: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+.btns button:hover{
+    cursor: pointer;
+    background-color: darkolivegreen;
+}
+.options button {
+    border-radius: 7px;
+    background: none;
+    color:white;
+    border: 1px white solid;
+    padding: 0.5em 1em;
+    width: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+
+.options button:hover {
+    background-color: dodgerblue;
+    border: 1px dodgerblue solid;
+}
+
+.shakeComputer{
+    animation: shakeComputer 0.8s linear;
+}
+
+.shakePlayer{
+    animation: shakePlayer 0.8s linear;
+}
+
+/*Animations: */
+
+@keyframes shakeComputer {
+    0% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shakePlayer {
+    0% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
